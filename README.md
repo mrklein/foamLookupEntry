@@ -16,7 +16,7 @@ The following options are available:
 
 * **-dict**
 
-  Specify dictionary file, if omitted it is read from stdin.
+  Specify dictionary file, if omitted data is read from stdin.
 
 * **-key**
 
@@ -26,6 +26,13 @@ The following options are available:
 * **-batch**
   
   Fail silently returning positive value.
+
+## RETURN VALUES
+
+* **1** - option **-key** is absent
+* **2** - file specied by **-dict** option does not exist
+* **4** - keyword specified by **-key** option is not found
+* **8** - one of subdictionaries in dot-separated path was not found
 
 ## EXAMPLES
 
