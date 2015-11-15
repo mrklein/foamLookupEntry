@@ -1,0 +1,3 @@
+foamLookupEntry.C
+
+EXE = $(FOAM_APPBIN)/foamLookupEntry
